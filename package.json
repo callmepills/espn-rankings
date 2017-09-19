@@ -1,0 +1,24 @@
+{
+  "name": "fantasy-rankings-api",
+  "version": "1.0.0",
+  "description": "JSON API for getting fantasy sports rankings",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codepills/fantasy-rankings-api.git"
+  },
+  "author": "codepills",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codepills/fantasy-rankings-api/issues"
+  },
+  "homepage": "https://github.com/codepills/fantasy-rankings-api#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.15.4",
+    "morgan": "^1.8.2",
+    "request": "^2.81.0"
+  }
+}
