@@ -10,6 +10,6 @@ app.set('json spaces', 2);
 app.use(morgan('short'));
 app.use('/rankings/espn', espn);
 
-app.listen(3000, function () {
-    console.log('Example app listening on port 3000!')
+app.listen(process.env.PORT || 3000, function () {
+    console.log('Fantasy Rankings API is ready to win!')
 });
