@@ -2,6 +2,9 @@
   "name": "fantasy-rankings-api",
   "version": "1.0.0",
   "description": "JSON API for getting fantasy sports rankings",
+  "engines": {
+    "node": "6.9.4"
+  },
   "scripts": {
     "start": "node app.js"
   },
