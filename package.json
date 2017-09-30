@@ -1,23 +1,23 @@
 {
-  "name": "fantasy-rankings-api",
+  "name": "dfs-mvp-api",
   "version": "1.0.0",
   "description": "JSON API for getting fantasy sports rankings",
   "engines": {
     "node": "6.9.4"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codepills/fantasy-rankings-api.git"
+    "url": "git+https://github.com/codepills/dfs-mvp-api.git"
   },
   "author": "codepills",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/codepills/fantasy-rankings-api/issues"
+    "url": "https://github.com/codepills/dfs-mvp-api/issues"
   },
-  "homepage": "https://github.com/codepills/fantasy-rankings-api#readme",
+  "homepage": "https://github.com/codepills/dfs-mvp-api#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "express": "^4.15.4",
