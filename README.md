@@ -11,13 +11,13 @@ Gets the ESPN football rankings for a given season, week, and position. The `pos
 ```js
 [
   {
-    "overall": "string",
+    "overall": "number",
     "opp": "string",
     "berry": "number",
-    "karabell": "string",
-    "yates": "string",
-    "cockroft": "string",
-    "avg": "string",
+    "karabell": "number",
+    "yates": "number",
+    "cockroft": "number",
+    "avg": "number",
     "name": "string",
     "team": "string"
   },

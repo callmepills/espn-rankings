@@ -19,25 +19,25 @@ describe('espn-rankings', function () {
                     type: "object",
                     properties: {
                         overall: {
-                            type: "string"
+                            type: "number"
                         },
                         opp: {
                             type: "string"
                         },
                         berry: {
-                            type: "string"
+                            type: ["number", "null"]
                         },
                         karabell: {
-                            type: "string"
+                            type: ["number", "null"]
                         },
                         yates: {
-                            type: "string"
+                            type: ["number", "null"]
                         },
                         cockroft: {
-                            type: "string"
+                            type: ["number", "null"]
                         },
                         avg: {
-                            type: "string"
+                            type: ["number", "null"]
                         },
                         name: {
                             type: "string"

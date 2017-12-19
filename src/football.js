@@ -29,13 +29,13 @@ function getRankings(slotCategoryId, scoringPeriodId, seasonId, callback) {
         const rankings = $('tbody tr').map(function (i, elem) {
             const $tr = $(this), td = $tr.find('td:nth-child(1)').text();
             const ranking = {
-                overall: getOverall(td),
+                overall: +getOverall(td),
                 opp: $tr.find('td:nth-child(2)').text(),
-                berry: $tr.find('td:nth-child(3)').text(),
-                karabell: $tr.find('td:nth-child(4)').text(),
-                yates: $tr.find('td:nth-child(5)').text(),
-                cockroft: $tr.find('td:nth-child(6)').text(),
-                avg: $tr.find('td:nth-child(7)').text()
+                berry: +$tr.find('td:nth-child(3)').text(),
+                karabell: +$tr.find('td:nth-child(4)').text(),
+                yates: +$tr.find('td:nth-child(5)').text(),
+                cockroft: +$tr.find('td:nth-child(6)').text(),
+                avg: +$tr.find('td:nth-child(7)').text()
             };
             if (slotCategoryId === 16) {
                 ranking.name = getDefenseName(td);
