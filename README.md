@@ -8,7 +8,7 @@ Look up ESPN fantasy rankings via REST API. An Express application that scrapes 
 
 Gets the ESPN football rankings for a given season, week, and position. The `position` can be one of **qb**, **rb**, **wr**, **te**, or **dst**. An array of rankings is returned with the following schema:
 
-```json
+```js
 [
   {
     "overall": "number",
@@ -21,7 +21,7 @@ Gets the ESPN football rankings for a given season, week, and position. The `pos
     "name": "string",
     "team": "string"
   },
-  ...
+  // ...
 ]
 ```
 
