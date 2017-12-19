@@ -1,7 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
 
-const espn = require('./espn');
+const football = require('./football');
 
 const app = express();
 
@@ -9,9 +9,9 @@ app.set('json spaces', 2);
 
 app.use(morgan('short'));
 
-app.use('/rankings/espn', espn);
+app.use('/football', football);
 
 app.listen(process.env.PORT || 8090, function () {
-  console.log('DFS MVP API is ready to win!')
+  console.log('espn-rankings is up!')
 });
 
