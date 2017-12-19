@@ -1,6 +1,6 @@
 # espn-rankings
 
-Look up ESPN fantasy rankings via REST API. An Express application that scrapes the rankings available on espn.com, parses them, and returns a more consumable JSON format.
+An Express application that scrapes the rankings available from [ESPN](http://www.espn.com/), parses them, and responds with a more consumable JSON format.
 
 ## Resources
 
