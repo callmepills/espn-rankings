@@ -21,11 +21,9 @@ function getTeam(td) {
 }
 
 function getRankings(slotCategoryId, scoringPeriodId, seasonId, callback) {
-    const url = `http://g.espncdn.com/ffl/tools/rankingsTable?slotCategoryId=${slotCategoryId}&scoringPeriodId=${scoringPeriodId}&seasonId=${seasonId}&rankType=ppr`;
+    const url = `https://fantasy.espn.com/football/tools/fantasyRankings?slotCategoryId=${slotCategoryId}&scoringPeriodId=${scoringPeriodId}&seasonId=${seasonId}&rankType=ppr`;
     request.get(url, function (error, response, body) {
-        let table = body.substring(body.indexOf('var newTable = jQuery(\'') + 23);
-        table = table.substring(0, table.indexOf('\');')).replace(/\\/g, '');
-        const $ = cheerio.load(table);
+        const $ = cheerio.load(body);
         const rankings = $('tbody tr').map(function (i, elem) {
             const $tr = $(this), td = $tr.find('td:nth-child(1)').text();
             const ranking = {
