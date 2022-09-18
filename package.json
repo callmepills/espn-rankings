@@ -1,5 +1,5 @@
 {
-  "name": "espn-rankings",
+  "name": "dfs-mvp-api",
   "version": "1.0.0",
   "description": "Look up ESPN fantasy rankings via REST API.",
   "engines": {
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/callmepills/espn-rankings.git"
+    "url": "git+https://github.com/callmepills/dfs-mvp-api.git"
   },
   "author": "callmepills",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/callmepills/espn-rankings/issues"
+    "url": "https://github.com/callmepills/dfs-mvp-api/issues"
   },
-  "homepage": "https://github.com/callmepills/espn-rankings#readme",
+  "homepage": "https://github.com/callmepills/dfs-mvp-api#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "express": "^4.15.4",
