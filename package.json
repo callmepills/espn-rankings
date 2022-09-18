@@ -1,5 +1,5 @@
 {
-  "name": "dfs-mvp-api",
+  "name": "espn-rankings",
   "version": "1.0.0",
   "description": "Look up ESPN fantasy rankings via REST API.",
   "engines": {
